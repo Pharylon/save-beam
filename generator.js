@@ -216,7 +216,6 @@ const wizardState = {
 const concernsList = [
   { id: 'financials', title: "It doesn't make financial sense", desc: "Focus on suspicious savings claims, SRO grants, and lack of school baseline budgets." },
   { id: 'capacity', title: "School overcrowding", desc: "Focus on Beam operating at 87% utilization and overloading Cherryville Elementary to 97%." },
-  { id: 'growth', title: "Cherryville is growing", desc: "Focus on new residential construction and rising enrollment projections over the next decade." },
   { id: 'educational', title: "It will hurt our education", desc: "Focus on middle school developmental risks and losing robotics, mathematics, and reading programs." }
 ];
 
@@ -408,7 +407,7 @@ function generateEmail() {
 
   // Fallback to random if empty (e.g. initial generation)
   if (keysToUse.length === 0) {
-    const argKeys = ['financials', 'capacity', 'growth', 'educational'];
+    const argKeys = ['financials', 'capacity', 'educational'];
     keysToUse.push(getRandomElement(argKeys));
   }
 
@@ -495,6 +494,27 @@ function copyToClipboard() {
     }, 2000);
   }).catch(err => {
     console.error('Failed to copy: ', err);
+  });
+}
+
+// Copy to clipboard utility (To field emails list)
+function copyToEmailsClipboard() {
+  const previewTo = document.getElementById('preview-to');
+  if (!previewTo) return;
+
+  const btn = document.getElementById('btn-copy-to');
+  const btnText = document.getElementById('btn-copy-to-text');
+
+  navigator.clipboard.writeText(previewTo.value).then(() => {
+    if (btn) btn.className = "btn-copy-inline btn-success";
+    if (btnText) btnText.innerText = "Copied!";
+
+    setTimeout(() => {
+      if (btn) btn.className = "btn-copy-inline";
+      if (btnText) btnText.innerText = "Copy";
+    }, 2000);
+  }).catch(err => {
+    console.error('Failed to copy emails: ', err);
   });
 }
 

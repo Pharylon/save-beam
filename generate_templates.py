@@ -38,26 +38,26 @@ with open(db_path, "r", encoding="utf-8") as f:
 
 # Define the 12 parts and their base sentences to expand
 parts_to_expand = {
-  "financialsPart1": "The board's projected savings of $288,000 from closing Beam Intermediate are highly suspect/overrated/etc. Once you account for student-tied Title 1 funds, shared teachers, and grant-funded SROs transferring with the children, the true net savings fall to $90,000 according to The Cherryville Education Alliance's study and the county hasn't given any evidence to dispute that.",
-  "financialsPart2": "Gaston County Schools is not the most costly school per-student. Public records requests have revealed Gaston County Schools does not even track individual budgets per school. Voting to close a school without knowing its baseline operating cost is fiscally irresponsible.",
-  "financialsPart3": "Cherryville is already underfunded compared to more affluent cities in the county.",
+  #"financialsPart1": "The board's projected savings of $288,000 from closing Beam Intermediate are highly suspect/overrated/etc. Once you account for student-tied Title 1 funds, shared teachers, and grant-funded SROs transferring with the children, the true net savings fall to $90,000 according to The Cherryville Education Alliance's study and the county hasn't given any evidence to dispute that.",
+  #"financialsPart2": "Gaston County Schools is not the most costly school per-student. Public records requests have revealed Gaston County Schools does not even track individual budgets per school. Voting to close a school without knowing its baseline operating cost is fiscally irresponsible.",
+  #"financialsPart3": "Cherryville is already underfunded compared to more affluent cities in the county.",
   
-  "capacityPart1": "We must also look at school capacity, as W.B. Beam Intermediate is currently operating at an efficient 87% utilization (or phrase it as 'almost 90%' or something similar). Voting to close Beam will immediately push Cherryville Elementary will overcrowd our schools even more.",
-  "capacityPart2": "Chavis is already facing huge classroom overcrowding issues and doesn't have the room or resources to take on Beam's student population.",
-  "capacityPart3": "Overcrowded classrooms degrade the learning environment and stretch our teachers past their limits. The decision to transition 5th graders to John Chavis Middle School presents severe developmental risks for our kids. It strips them of a dedicated upper-elementary environment and cancels crucial identity-building programs like Battle of the Books, Math Masters, and Robotics that help them thrive.",
+  "capacityPart1": "We must also look at school capacity, as W.B. Beam Intermediate is currently operating at an efficient 87% utilization (or phrase it as 'almost 90%' or something similar). Voting to close Beam will immediately push Cherryville Elementary over 100 percent!",
+  "capacityPart2": "Consolidating Beam and Cherryville Elementary drops the number of 5th grade teachers to only 3, meaning 30+ kids per classroom.",
+  "capacityPart3": "The plan to conbine Beam and Cherryville Elementary completely ignores shared spaces. Cherryville Elementary already doesn't have a full-sized gym or cafeteria. *Currently* with K-3 classes, they have to begin lunch at 10:30. What happens when we add 100 more kids? You don't know because it's not addressed in the consolidation plan",
   
-  "growthPart1": "This closure is particularly short-sighted because Cherryville is entering a period of significant residential growth. With hundreds of new housing units already approved, school enrollment will rise steadily over the next decade.",
-  "growthPart2": "If we push Cherryville schools to near-1005 capacity now, how will they deal with growth? Reopening or expanding schools is much harder than shutting them down",
-  "growthPart3": "Closing Beam now is a short-sighted mistake that will leave our district unprepared and force us to build new facilities later.",
+  #"growthPart1": "This closure is particularly short-sighted because Cherryville is entering a period of significant residential growth. With hundreds of new housing units already approved, school enrollment will rise steadily over the next decade.",
+ # "growthPart2": "If we push Cherryville schools to near-1005 capacity now, how will they deal with growth? Reopening or expanding schools is much harder than shutting them down",
+  #"growthPart3": "Closing Beam now is a short-sighted mistake that will leave our district unprepared and force us to build new facilities later.",
   
-  "educationalPart1": "Moving fifth graders to John Chavis Middle School is a major developmental mistake. These are elementary school students mingling with teenagers!",
-  "educationalPart2": "Fifth graders thrive in elementary environments, and moving them to a middle school will strip them of essential upper-elementary identity programs.",
-  "educationalPart3": "Our school would be the only one in the county without encore classes. It seems these were stripped from us to free up rooms for consolidation."
+  #"educationalPart1": "Moving fifth graders to John Chavis Middle School is a major developmental mistake. These are elementary school students mingling with teenagers!",
+  #"educationalPart2": "Fifth graders thrive in elementary environments, and moving them to a middle school will strip them of essential upper-elementary identity programs.",
+  #"educationalPart3": "Our school would be the only one in the county without encore classes. It seems these were stripped from us to free up rooms for consolidation."
 }
 
 def generate_variations(key, base_sentence, max_retries=3):
     prompt = f"""You are a communications consultant helping community advocates save W.B. Beam Intermediate School in Cherryville, NC.
-Generate exactly 100 distinct, unique, and natural-sounding sentances making the general point below, to be used in advocacy emails sent by residents to the Gaston County School Board:
+Generate exactly 100 distinct, unique, and natural-sounding variations of these sentence(s) making the general point below, to be used in advocacy emails sent by residents to the Gaston County School Board:
 
 "{base_sentence}"
 

@@ -145,35 +145,7 @@
                 <div class="concern-info">
                   <span class="concern-title">School overcrowding</span>
                   <span class="concern-desc">Focus on Beam operating at 87% utilization and overloading Cherryville
-                    Elementary to 97%.</span>
-                </div>
-              </div>
-              <div class="card-flip-back">
-                <div class="back-content">
-                  <svg class="icon check-icon" viewBox="0 0 24 24">
-                    <polyline points="20 6 9 17 4 12" />
-                  </svg>
-                  <span class="back-title">Selected</span>
-                  <span class="back-desc">Added to email</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 3: growth -->
-          <div class="card-flip-container" data-concern="growth">
-            <div class="card-flip-inner">
-              <div class="card-flip-front">
-                <div class="concern-icon">
-                  <svg class="icon" viewBox="0 0 24 24">
-                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-                    <polyline points="9 22 9 12 15 12 15 22" />
-                  </svg>
-                </div>
-                <div class="concern-info">
-                  <span class="concern-title">Cherryville is growing</span>
-                  <span class="concern-desc">Focus on new residential construction and rising enrollment projections
-                    over the next decade.</span>
+                    Elementary to over 100% capacity.</span>
                 </div>
               </div>
               <div class="card-flip-back">
@@ -252,7 +224,16 @@
           </div>
           <div class="subject-field">
             <span class="subject-label" style="min-width: 60px;">To:</span>
-            <input type="text" id="preview-to" class="subject-input" readonly aria-label="Email Recipients List" style="font-family: monospace; font-size: 0.85rem;">
+            <input type="text" id="preview-to" class="subject-input" readonly aria-label="Email Recipients List"
+              style="font-family: monospace; font-size: 0.85rem;">
+            <button type="button" id="btn-copy-to" class="btn-copy-inline" title="Copy email addresses"
+              onclick="copyToEmailsClipboard()">
+              <svg class="icon" viewBox="0 0 24 24">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+              </svg>
+              <span id="btn-copy-to-text">Copy</span>
+            </button>
           </div>
           <div class="subject-field">
             <span class="subject-label" style="min-width: 60px;">Subject:</span>
