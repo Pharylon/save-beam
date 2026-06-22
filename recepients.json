@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Josh Crisp",
+        "email": "joshcrisp@gaston.k12.nc.us",
+        "role": "Chairman",
+        "area": "Dallas Township"
+    },
+    {
+        "name": "Dot Cherry",
+        "email": "dotcherry@gaston.k12.nc.us",
+        "role": "Vice Chairman",
+        "area": "At-Large Member"
+    },
+    {
+        "name": "Lee Dedmon",
+        "email": "leededmon@gaston.k12.nc.us",
+        "role": "Member",
+        "area": "Gastonia Township"
+    },
+    {
+        "name": "Tod Kinlaw",
+        "email": "todkinlaw@gaston.k12.nc.us",
+        "role": "Member",
+        "area": "South Point Township"
+    },
+    {
+        "name": "Robbie Lovelace",
+        "email": "robbielovelace@gaston.k12.nc.us",
+        "role": "Member",
+        "area": "Cherryville Township"
+    },
+    {
+        "name": "Brent Moore",
+        "email": "dbmoore@gaston.k12.nc.us",
+        "role": "Member",
+        "area": "Crowders Mountain Township"
+    },
+    {
+        "name": "Jeff Ramsey",
+        "email": "jefframsey@gaston.k12.nc.us",
+        "role": "Member",
+        "area": "At-Large Member"
+    },
+    {
+        "name": "Janna Smith",
+        "email": "jannasmith@gaston.k12.nc.us",
+        "role": "Member",
+        "area": "Gastonia Township"
+    },
+    {
+        "name": "A.M. Stephens III",
+        "email": "amstephens@gaston.k12.nc.us",
+        "role": "Member",
+        "area": "Riverbend Township"
+    },
+    {
+        "name": "Morgen A. Houchard",
+        "email": "superintendent@gaston.k12.nc.us",
+        "role": "Superintendent",
+        "area": null
+    }
+]
